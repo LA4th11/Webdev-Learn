@@ -11,7 +11,7 @@
     <!-- Title of the webpage -->
     <title>HTML LEARN</title>
 
-    <!-- Internal CSS for styling the table elements -->
+    <!-- Internal CSS for basic styling of table elements -->
     <style>
       table,
       th,
@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <!-- HTML Headings Section -->
+    <!-- Section 1: Headings of different levels -->
     <h1>Lorem Ipsum</h1>
     <h2>Lorem Ipsum</h2>
     <h3>Lorem Ipsum</h3>
@@ -31,16 +31,16 @@
     <h5>Lorem Ipsum</h5>
     <h6>Lorem Ipsum</h6>
 
-    <!-- HTML Paragraphs Section -->
+    <!-- Section 2: Paragraph text -->
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
     </p>
 
-    <!-- HTML Links Section -->
+    <!-- Section 3: Links (anchor elements) -->
     <a href="https://www.youtube.com/watch?v=Pb-HDNUSqrE">Click me!</a>
 
-    <!-- HTML Images Section -->
+    <!-- Section 4: Images -->
     <img
       src="https://cdnb.artstation.com/p/assets/images/images/004/456/215/large/wil-hughes-troll-face.jpg?1483926054"
       alt="Troll_Face"
@@ -48,23 +48,23 @@
       height="300"
     />
 
-    <!-- HTML Horizontal Rule (Line) -->
+    <!-- Horizontal Rule (Line) -->
     <hr />
 
-    <!-- HTML Line Break -->
+    <!-- Line Break -->
     <br />
 
-    <!-- HTML <pre> Element: Preformatted Text -->
+    <!-- Section 5: Preformatted text for structured text -->
     <pre>
       Lorem ipsum dolor sit amet.
       Consectetur adipiscing elit.
       Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     </pre>
 
-    <!-- HTML Style Attributes Example: Inline styling -->
+    <!-- Section 6: Inline style attribute example (not recommended in large apps) -->
     <h1 style="background-color: aqua">Lorem Ipsum</h1>
 
-    <!-- HTML Formatting Elements -->
+    <!-- Section 7: Formatting text with bold, italic, mark, etc. -->
     <p>
       <b>Lorem ipsum</b> dolor sit amet, <strong>adipiscing elit</strong>, sed
       do <i>eiusmod tempor incididunt</i> ut
@@ -75,7 +75,7 @@
       <em>ea commodo consequat.</em>
     </p>
 
-    <!-- HTML Tables Section -->
+    <!-- Section 8: Basic Tables with borders -->
     <table>
       <tr>
         <th>First Name</th>
@@ -89,7 +89,7 @@
       </tr>
     </table>
 
-    <!-- HTML Table with Colspan Example -->
+    <!-- Section 9: Table with colspan -->
     <table>
       <tr>
         <th colspan="2">Full Name</th>
@@ -102,21 +102,21 @@
       </tr>
     </table>
 
-    <!-- Unordered HTML List -->
+    <!-- Section 10: Unordered list -->
     <ul>
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
     </ul>
 
-    <!-- Ordered HTML List -->
+    <!-- Section 11: Ordered list -->
     <ol>
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
     </ol>
 
-    <!-- HTML Description Lists -->
+    <!-- Section 12: Description list -->
     <dl>
       <dt>Coffee</dt>
       <dd>- Black hot drink</dd>
@@ -124,19 +124,19 @@
       <dd>- White cold drink</dd>
     </dl>
 
-    <!-- HTML Semantic Header with buttons for navigation -->
+    <!-- Section 13: Semantic Header with buttons (for navigation) -->
     <header style="background-color: aqua">
       <button>HOME</button>
       <button>ABOUT</button>
       <button>LOG OUT</button>
     </header>
 
-    <!-- HTML Semantic Footer with copyright information -->
+    <!-- Section 14: Semantic Footer -->
     <footer>
       <p>&copy; 2024 HTML LEARN. All rights reserved.</p>
     </footer>
 
-    <!-- HTML Semantic Section for content -->
+    <!-- Section 15: Semantic Section elements for organizing content -->
     <section>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -144,7 +144,6 @@
       </p>
     </section>
 
-    <!-- Another Semantic Section with more content -->
     <section>
       <p>
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -152,10 +151,101 @@
       </p>
     </section>
 
-    <!-- HTML Semantic Main section, usually contains the core content -->
+    <!-- Section 16: Semantic Main section for core content -->
     <main>
       <h1>HTML LEARN</h1>
       <p>All HTML learning important to create a website.</p>
     </main>
+
+    <!-- Section 17: Basic div block -->
+    <div>
+      <h1>Hello, people this is div</h1>
+    </div>
+
+    <!-- Section 18: Span example (block element inside span) -->
+    <div>
+      <span><h1>Hello, people this is span</h1></span>
+    </div>
+
+    <!-- Section 19: Input elements -->
+    <label for="text">
+      <input type="text" name="text" id="text" placeholder="Input Text" />
+    </label>
+
+    <!-- Radio buttons -->
+    <label for="default">
+      <input
+        type="radio"
+        name="fav_language"
+        id="default"
+        value="default"
+        checked
+      />
+      DEFAULT
+    </label>
+    <label for="html">
+      <input type="radio" name="fav_language" id="html" value="HTML" />
+      HTML
+    </label>
+    <label for="css">
+      <input type="radio" name="fav_language" id="css" value="CSS" />
+      CSS
+    </label>
+    <label for="javascript">
+      <input
+        type="radio"
+        name="fav_language"
+        id="javascript"
+        value="JAVASCRIPT"
+      />
+      JAVASCRIPT
+    </label>
+
+    <!-- Checkboxes -->
+    <label for="javascript">
+      <input
+        type="checkbox"
+        name="prog_language"
+        id="javascript"
+        value="JAVASCRIPT"
+      />
+      JAVASCRIPT
+    </label>
+    <label for="java">
+      <input type="checkbox" name="prog_language" id="java" value="JAVA" />
+      JAVA
+    </label>
+    <label for="python">
+      <input type="checkbox" name="prog_language" id="python" value="PYTHON" />
+      PYTHON
+    </label>
+
+    <!-- Submit button -->
+    <label for="submit-btn">
+      <input type="submit" value="SUBMIT" id="submit-btn" />
+    </label>
+
+    <!-- Button element -->
+    <label for="cancel-btn">
+      <input type="button" value="CANCEL" id="cancel-btn" />
+    </label>
+
+    <!-- Section 20: HTML Form with a fieldset and legend -->
+    <form action="./index.html" method="get">
+      <fieldset>
+        <legend>Name Info</legend>
+        <label for="full-name">
+          <input
+            type="text"
+            name="name-info"
+            id="full-name"
+            placeholder="Full Name..."
+          />
+        </label>
+      </fieldset>
+      <label for="submit-form">
+        <input type="submit" value="Submit" id="submit-form" />
+      </label>
+    </form>
   </body>
 </html>
