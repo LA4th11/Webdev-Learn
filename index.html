@@ -1,251 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Tags: Charset for encoding and viewport for responsiveness -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Favicon for the webpage -->
-    <link rel="icon" type="image/png" href="./Assets/html-icon.png" />
-
-    <!-- Title of the webpage -->
-    <title>HTML LEARN</title>
-
-    <!-- Internal CSS for basic styling of table elements -->
-    <style>
-      table,
-      th,
-      td {
-        border: 2px solid black;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="icon" href="./assets/css-48x48-logo.png" />
+    <title>CSS LEARN</title>
   </head>
-
   <body>
-    <!-- Section 1: Headings of different levels -->
-    <h1>Lorem Ipsum</h1>
-    <h2>Lorem Ipsum</h2>
-    <h3>Lorem Ipsum</h3>
-    <h4>Lorem Ipsum</h4>
-    <h5>Lorem Ipsum</h5>
-    <h6>Lorem Ipsum</h6>
-
-    <!-- Section 2: Paragraph text -->
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-
-    <!-- Section 3: Links (anchor elements) -->
-    <a href="https://www.youtube.com/watch?v=Pb-HDNUSqrE">Click me!</a>
-
-    <!-- Section 4: Images -->
-    <img
-      src="https://cdnb.artstation.com/p/assets/images/images/004/456/215/large/wil-hughes-troll-face.jpg?1483926054"
-      alt="Troll_Face"
-      width="300"
-      height="300"
-    />
-
-    <!-- Horizontal Rule (Line) -->
-    <hr />
-
-    <!-- Line Break -->
-    <br />
-
-    <!-- Section 5: Preformatted text for structured text -->
-    <pre>
-      Lorem ipsum dolor sit amet.
-      Consectetur adipiscing elit.
-      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    </pre>
-
-    <!-- Section 6: Inline style attribute example (not recommended in large apps) -->
-    <h1 style="background-color: aqua">Lorem Ipsum</h1>
-
-    <!-- Section 7: Formatting text with bold, italic, mark, etc. -->
-    <p>
-      <b>Lorem ipsum</b> dolor sit amet, <strong>adipiscing elit</strong>, sed
-      do <i>eiusmod tempor incididunt</i> ut
-      <small>labore et dolore</small> magna aliqua.
-      <mark>Ut enim ad</mark> minim <del>veniam</del>, quis
-      <ins>nostrud exercitation</ins>
-      <sub>ullamco laboris</sub> nisi <sup>ut aliquip ex</sup>
-      <em>ea commodo consequat.</em>
-    </p>
-
-    <!-- Section 8: Basic Tables with borders -->
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Location</th>
-      </tr>
-      <tr>
-        <td>Lorenzo</td>
-        <td>Laforteza</td>
-        <td>Cavite</td>
-      </tr>
-    </table>
-
-    <!-- Section 9: Table with colspan -->
-    <table>
-      <tr>
-        <th colspan="2">Full Name</th>
-        <th>Location</th>
-      </tr>
-      <tr>
-        <td>Lorenzo</td>
-        <td>Laforteza</td>
-        <td>Cavite</td>
-      </tr>
-    </table>
-
-    <!-- Section 10: Unordered list -->
-    <ul>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-
-    <!-- Section 11: Ordered list -->
-    <ol>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-
-    <!-- Section 12: Description list -->
-    <dl>
-      <dt>Coffee</dt>
-      <dd>- Black hot drink</dd>
-      <dt>Milk</dt>
-      <dd>- White cold drink</dd>
-    </dl>
-
-    <!-- Section 13: Semantic Header with buttons (for navigation) -->
-    <header style="background-color: aqua">
-      <button>HOME</button>
-      <button>ABOUT</button>
-      <button>LOG OUT</button>
-    </header>
-
-    <!-- Section 14: Semantic Footer -->
-    <footer>
-      <p>&copy; 2024 HTML LEARN. All rights reserved.</p>
-    </footer>
-
-    <!-- Section 15: Semantic Section elements for organizing content -->
-    <section>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </section>
-
-    <section>
-      <p>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.
-      </p>
-    </section>
-
-    <!-- Section 16: Semantic Main section for core content -->
-    <main>
-      <h1>HTML LEARN</h1>
-      <p>All HTML learning important to create a website.</p>
+    <nav>
+      <h1>CSS LEARN</h1>
+      <div>
+        <button onclick="document.getElementById('home').scrollIntoView()">
+          HOME
+        </button>
+        <button onclick="document.getElementById('about').scrollIntoView()">
+          ABOUT
+        </button>
+        <button onclick="document.getElementById('contact').scrollIntoView()">
+          CONTACT
+        </button>
+      </div>
+    </nav>
+    <main id="home">
+      <div><h1>HOME</h1></div>
     </main>
-
-    <!-- Section 17: Basic div block -->
-    <div>
-      <h1>Hello, people this is div</h1>
-    </div>
-
-    <!-- Section 18: Span example (block element inside span) -->
-    <div>
-      <span><h1>Hello, people this is span</h1></span>
-    </div>
-
-    <!-- Section 19: Input elements -->
-    <label for="text">
-      <input type="text" name="text" id="text" placeholder="Input Text" />
-    </label>
-
-    <!-- Radio buttons -->
-    <label for="default">
-      <input
-        type="radio"
-        name="fav_language"
-        id="default"
-        value="default"
-        checked
-      />
-      DEFAULT
-    </label>
-    <label for="html">
-      <input type="radio" name="fav_language" id="html" value="HTML" />
-      HTML
-    </label>
-    <label for="css">
-      <input type="radio" name="fav_language" id="css" value="CSS" />
-      CSS
-    </label>
-    <label for="javascript">
-      <input
-        type="radio"
-        name="fav_language"
-        id="javascript"
-        value="JAVASCRIPT"
-      />
-      JAVASCRIPT
-    </label>
-
-    <!-- Checkboxes -->
-    <label for="javascript">
-      <input
-        type="checkbox"
-        name="prog_language"
-        id="javascript"
-        value="JAVASCRIPT"
-      />
-      JAVASCRIPT
-    </label>
-    <label for="java">
-      <input type="checkbox" name="prog_language" id="java" value="JAVA" />
-      JAVA
-    </label>
-    <label for="python">
-      <input type="checkbox" name="prog_language" id="python" value="PYTHON" />
-      PYTHON
-    </label>
-
-    <!-- Submit button -->
-    <label for="submit-btn">
-      <input type="submit" value="SUBMIT" id="submit-btn" />
-    </label>
-
-    <!-- Button element -->
-    <label for="cancel-btn">
-      <input type="button" value="CANCEL" id="cancel-btn" />
-    </label>
-
-    <!-- Section 20: HTML Form with a fieldset and legend -->
-    <form action="./index.html" method="get">
-      <fieldset>
-        <legend>Name Info</legend>
-        <label for="full-name">
-          <input
-            type="text"
-            name="name-info"
-            id="full-name"
-            placeholder="Full Name..."
-          />
-        </label>
-      </fieldset>
-      <label for="submit-form">
-        <input type="submit" value="Submit" id="submit-form" />
-      </label>
-    </form>
+    <section id="about">
+      <div>
+        <h1>ABOUT</h1>
+        <p>This is about section</p>
+      </div>
+    </section>
+    <section id="contact">
+      <div><h1>CONTACT</h1></div>
+    </section>
   </body>
 </html>
